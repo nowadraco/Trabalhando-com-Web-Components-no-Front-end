@@ -5,7 +5,7 @@ class tituloDinamico extends HTMLElement {
     const shadow = this.attachShadow({ mode: "open"});
     
     const componetRoot = document.createElement("h1");
-    componetRoot.textContent = this.getAttribute("titulo")
+    componetRoot.textContent = this.getAttribute("titulo");
     
     const style = document.createElement("style");
     style.textContent = `
@@ -14,8 +14,8 @@ class tituloDinamico extends HTMLElement {
     }
     `
     
-    shadow.appendChild(componetRoot)
-    shadow.appendChild(style)
+    shadow.appendChild(componetRoot);
+    shadow.appendChild(style);
     
   }
 }
